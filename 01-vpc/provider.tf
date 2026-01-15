@@ -7,9 +7,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "daws76s-state-dev"
-    key    = "vpc"
-    region = "us-east-1"
+     bucket         = "skatla-vpc"
+    key            = "vpc/terraform.tfstate"
+    region         = "ap-south-1"
     dynamodb_table = "daws76s-locking-dev"
   }
 }
